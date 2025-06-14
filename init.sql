@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS "Alunos" (
+  id SERIAL PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  data_nascimento DATE NOT NULL,
+  responsavel VARCHAR(255) NOT NULL,
+  "createdAt" TIMESTAMP NOT NULL DEFAULT NOW(),
+  "updatedAt" TIMESTAMP NOT NULL DEFAULT NOW()
+);
